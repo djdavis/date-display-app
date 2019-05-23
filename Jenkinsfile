@@ -1,7 +1,7 @@
 node() {
     echo "Your Pipeline works!"
     sh('ls -la')
-    sh('sudo apt-get install npm')
+    sh('echo hello')
     sh('npm install')
 	sh('npm test')
 }
