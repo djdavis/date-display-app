@@ -29,11 +29,6 @@ volumes: [
         throw(exc)
       }
     }
-    stage('Run kubectl') {
-      container('kubectl') {
-        sh "kubectl get pods"
-      }
-    }
     stage('Run helm') {
       container('helm') {
         sh "helm list"
