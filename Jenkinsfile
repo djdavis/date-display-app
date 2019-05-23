@@ -3,5 +3,5 @@ node() {
     sh('ls -la')
     sh('echo hello')
     sh('npm install')
-	sh('npm test')
+    sh('npm test')
 }
