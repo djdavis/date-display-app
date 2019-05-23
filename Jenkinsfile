@@ -18,6 +18,8 @@ volumes: [
         container('carbon-jessie') {
           sh """
             pwd
+            ls -al
+            npm install mocha
             npm test
             """
         }
